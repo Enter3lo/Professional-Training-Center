@@ -14,14 +14,18 @@
     <div class="main-grid">
         <header>
             <nav>
-                <a href="/index.html" style="background-color: #EAAC25;">Главная</a>
+                <a href="/index.html">Главная</a>
                 <a href="/templates/curses.html">Курсы</a>
-                <a href="/templates/listener.html" id="button-listener">Слушатели</a>
+                <a href="/templates/listener.html" id="button-listener" style="background-color: #EAAC25;">Слушатели</a>
             </nav>
         </header>
         <!--Сюда добавлять кнопки для переключения таблиц-->
         <div class="nav-tabs">
             <div class="tables">
+                <a href="#">
+                    <img src="/static/img/icon-listener.svg" alt="#">
+                    Слушатели курсов
+                </a>
                 <a href="#">
                     <img src="/static/img/icon-contracts.svg" alt="#">
                     Договоры
@@ -34,9 +38,6 @@
                         1ПК
                     </button>
                     <button>
-                        Проводимые курсы
-                    </button>
-                    <button>
                         Слушатели курсов
                     </button>
                     <button style="border-bottom: 0; border-radius: 0 0 5px 5px;">
@@ -47,20 +48,6 @@
                     Отчёты
                     <img id="arrow" src="/static/img/icon-arrow.svg" alt="#">
                 </button>
-            </div>
-        </div>
-        <div class="table-curses">
-            <h1>Курсы</h1>
-            <button>Создать</button>
-            <div class="table-view-curses">
-
-            </div>
-        </div>
-        <div class="table-listener">
-            <h1>Слушатели курсов</h1>
-            <button>Создать</button>
-            <div class="table-view-listener">
-
             </div>
         </div>
     </div>

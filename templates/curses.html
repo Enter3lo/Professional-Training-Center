@@ -14,8 +14,8 @@
     <div class="main-grid">
         <header>
             <nav>
-                <a href="/index.html" style="background-color: #EAAC25;">Главная</a>
-                <a href="/templates/curses.html">Курсы</a>
+                <a href="/index.html">Главная</a>
+                <a href="/templates/curses.html" style="background-color: #EAAC25;">Курсы</a>
                 <a href="/templates/listener.html" id="button-listener">Слушатели</a>
             </nav>
         </header>
@@ -23,44 +23,25 @@
         <div class="nav-tabs">
             <div class="tables">
                 <a href="#">
-                    <img src="/static/img/icon-contracts.svg" alt="#">
-                    Договоры
+                    <img src="/static/img/icon-curses.svg" alt="#">
+                    Курсы
+                </a>
+                <a href="#">
+                    <img src="/static/img/icon-requirements.svg" alt="#">
+                    Требования к курсам
                 </a>
             </div>
             <!--Прижимает кнопку отчётов к нижней части навигации-->
             <div class="nav-tabs-button">
                 <div id="view-reports" class="list-reports">
-                    <button style="border-radius: 5px 5px 0 0;">
-                        1ПК
-                    </button>
                     <button>
                         Проводимые курсы
-                    </button>
-                    <button>
-                        Слушатели курсов
-                    </button>
-                    <button style="border-bottom: 0; border-radius: 0 0 5px 5px;">
-                        Обучение слушателей
                     </button>
                 </div>
                 <button id="reports" onclick="show_report()">
                     Отчёты
                     <img id="arrow" src="/static/img/icon-arrow.svg" alt="#">
                 </button>
-            </div>
-        </div>
-        <div class="table-curses">
-            <h1>Курсы</h1>
-            <button>Создать</button>
-            <div class="table-view-curses">
-
-            </div>
-        </div>
-        <div class="table-listener">
-            <h1>Слушатели курсов</h1>
-            <button>Создать</button>
-            <div class="table-view-listener">
-
             </div>
         </div>
     </div>
