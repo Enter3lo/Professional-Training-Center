@@ -1,0 +1,44 @@
+<div class="table-curses">
+  <h1>Курсы</h1>
+  <button>Создать</button>
+  <div class="table-view-curses">
+    <table id="table">
+      <thead>
+        <tr>
+          <th>Наименование</th>
+          <th>Требования</th>
+          <th>Тип</th>
+          <th>Стоимость</th>
+          <th>Форма обучения</th>
+          <th>Дата начала</th>
+          <th>Дата окончания</th>
+          <th>Количество часов</th>
+          <th>Количество месяцев</th>
+        </tr>
+      </thead>
+      <tbody>
+        {{curses|safe}}
+      </tbody>
+    </table>
+  </div>
+</div>
+<div class="table-listener">
+  <h1>Слушатели курсов</h1>
+  <button>Создать</button>
+  <div class="table-view-listener">
+    <table id="table1">
+      <thead>
+        <tr>
+          <th>ФИО</th>
+          <th>Должность</th>
+          <th>Место работы</th>
+          <th>Пол</th>
+          <th>Дата рождения</th>
+        </tr>
+      </thead>
+      <tbody>
+        {{listener|safe}}
+      </tbody>
+    </table>
+  </div>
+</div>

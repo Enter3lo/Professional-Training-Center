@@ -1,0 +1,15 @@
+<div class='view'>
+    <h1>{{title_view}}</h1>
+    <button>Создать</button>
+    <div style="display:flex;align-items: center;justify-content: flex-end;margin-right:10px;">
+        <form {{action}}>
+            <button style="width: 50px;grid-column: 3/4; grid-row:1/2;">
+                Х
+            </button>
+        </form>
+    </div>
+    <div class="table-view">
+        {%include table%}
+    </div>
+
+</div>

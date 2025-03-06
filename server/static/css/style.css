@@ -10,7 +10,7 @@ body {
     width: 100%;
     height: 100%;
     display: grid;
-    grid-template-columns: 389px 1fr 1fr;
+    grid-template-columns: 330px 1fr min-content;
     grid-template-rows: 94px 1fr 1fr
 }
 
@@ -183,7 +183,7 @@ a:hover {
     align-items: center;
 
     h1 {
-        font-size: 48px;
+        font-size: 38px;
         grid-column: 1/2;
         grid-row: 1/1;
         margin: 0;
@@ -200,6 +200,8 @@ a:hover {
 }
 
 .table-view-curses {
+    max-height: 800px;
+    overflow-y: auto;
     border: 1px solid black;
     grid-column: 1/4;
     grid-row: 2/4;
@@ -223,7 +225,7 @@ a:hover {
     align-items: center;
 
     h1 {
-        font-size: 48px;
+        font-size: 38px;
         grid-column: 1/2;
         grid-row: 1/1;
         margin: 0;
@@ -236,10 +238,13 @@ a:hover {
         grid-row: 1/1;
         margin: 0;
         margin-left: 10px;
+        margin-right: 10px;
     }
 }
 
 .table-view-listener {
+    max-height: 800px;
+    overflow-y: auto;
     border: 1px solid black;
     grid-column: 1/4;
     grid-row: 2/4;
@@ -249,19 +254,109 @@ a:hover {
     height: 95%;
 }
 
-@media(max-width: 1700px) {
+table {
+    border-collapse: collapse;
+    font-size: 18px;
+    margin: 10px;
+}
+
+th,
+td {
+    border: 1px solid grey;
+}
+
+thead {
+    background-color: #3078FF;
+    color: white;
+}
+
+.view {
+    grid-column: 2/4;
+    grid-row: 2/4;
+    margin: 10px;
+    margin-top: 0px;
+    margin-left: 0px;
+    border-radius: 0 0 5px 0;
+    background-color: white;
+    display: grid;
+    grid-template-columns: min-content min-content 1fr;
+    grid-template-rows: 80px repeat(2, 1fr);
+    align-items: center;
+
+    h1 {
+        font-size: 38px;
+        grid-column: 1 / 2;
+        grid-row: 1 / 1;
+        margin: 0;
+        margin-left: 20px;
+        white-space: nowrap;
+    }
+
     button {
-        font-size: 20px;
-        width: 150px;
-        height: 57px;
+        grid-column: 2 / 3;
+        grid-row: 1 / 1;
+        margin: 0;
+        margin-left: 10px;
+        margin-right: 10px;
     }
 
-    a {
-        font-size: 20px;
-    }
+    .table-view {
+        max-height: 800px;
+        overflow-y: auto;
+        border: 1px solid black;
+        grid-column: 1 / 4;
+        grid-row: 2 / 4;
+        margin: 20px;
+        margin-top: 0;
+        width: auto;
+        height: 95%;
+        text-align: center;
 
-    .table-listener h1,
-    .table-curses h1 {
-        font-size: 30px;
+        table {
+            margin: auto;
+            margin-top: 15px;
+            width: 95%;
+            height: 95%;
+        }
+
+        table th {
+            text-decoration: none;
+        }
     }
+}
+
+.highlight {
+    background-color: #EAAC25;
+    color: black;
+}
+
+#contextMenu {
+    display: none;
+    position: absolute;
+    background-color: white;
+    border: 1px solid #ccc;
+    z-index: 1000;
+}
+
+#contextMenu ul {
+    list-style: none;
+    margin: 0;
+    padding: 10px;
+}
+
+#contextMenu ul a {
+    color: black;
+}
+
+#contextMenu li {
+    padding: 5px 10px;
+
+}
+
+#contextMenu li:hover {
+    background-color: #EAAC25;
+}
+
+.selected {
+    background-color: #EAAC25;
 }
