@@ -360,3 +360,50 @@ thead {
 .selected {
     background-color: #EAAC25;
 }
+
+#button_cancel {
+    background-color: grey;
+}
+
+#button_cancel:hover {
+    background-color: #EAAC25;
+}
+
+.input_values {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 20px;
+
+    input {
+        font-size: 18px;
+    }
+
+    select {
+        font-size: 18px;
+    }
+}
+
+.buttons_form {
+    display: flex;
+    width: 100%;
+
+    button {
+        width: 100%;
+        margin: 0;
+    }
+
+    #button_cancel {
+        margin-left: 20px;
+    }
+}
+
+.error {
+    border: 2px solid red;
+}
+
+.error-message {
+    color: red;
+    font-size: 0.9em;
+}

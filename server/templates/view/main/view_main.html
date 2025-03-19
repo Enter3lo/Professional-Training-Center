@@ -1,13 +1,14 @@
 <div class="table-curses">
   <h1>Курсы</h1>
-  <button>Создать</button>
+  <form action="/main/create_curse?query=/main" method="post" novalidate>
+    <button>Создать</button>
+  </form>
   <div class="table-view-curses">
     <table id="table">
       <thead>
         <tr>
           <th>Наименование</th>
           <th>Требования</th>
-          <th>Тип</th>
           <th>Стоимость</th>
           <th>Форма обучения</th>
           <th>Дата начала</th>
